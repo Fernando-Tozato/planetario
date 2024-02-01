@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetário</title>
+    <script src="{{url_for('static',  filename='js/socket_io.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="planeta cima" id="mer" data-href="http://127.0.0.1:5000/mercurio"></div>
+        <div class="planeta cima" id="ven" data-href="http://127.0.0.1:5000/venus"></div>
+        <div class="planeta cima" id="ter" data-href="http://127.0.0.1:5000/terra"></div>
+        <div class="planeta cima" id="mar" data-href="http://127.0.0.1:5000/marte"></div>
+        <div class="planeta baixo" id="jup" data-href="http://127.0.0.1:5000/jupiter"></div>
+        <div class="planeta baixo" id="sat" data-href="http://127.0.0.1:5000/saturno"></div>
+        <div class="planeta baixo" id="ura" data-href="http://127.0.0.1:5000/urano"></div>
+        <div class="planeta baixo" id="net" data-href="http://127.0.0.1:5000/netuno"></div>
+    </div>
+    <script src="{{ url_for('static',  filename='js/script.js') }}"></script>
+</body>
+</html>

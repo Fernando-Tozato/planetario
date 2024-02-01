@@ -1,0 +1,46 @@
+body {
+    background-image: url("/static/img/INFO PLANETAS.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    align-items: center;
+    margin-top: 19rem;
+    width: 100vw;
+}
+
+.planeta {
+    border-width: 0.2rem;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: white;
+    width: 10rem;
+    height: 10rem;
+}
+
+#mer {
+    margin-left: 14.6rem;
+}
+
+#ven {
+    margin-left: 4.4rem;
+}
+
+#mar {
+    margin-left: -4.5rem;
+}
+
+.baixo {
+    margin-top: 29rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+#jup {
+    margin-left: 6.4rem;
+}
