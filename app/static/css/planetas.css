@@ -1,0 +1,17 @@
+body {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    width: 10rem;
+    height: 5rem;
+}

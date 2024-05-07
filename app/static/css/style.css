@@ -1,8 +1,11 @@
 body {
     background-image: url("/static/img/INFO PLANETAS.jpg");
-    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-size: 100%;
     background-repeat: no-repeat;
-    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container {
@@ -10,37 +13,75 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 100px);
     align-items: center;
-    margin-top: 19rem;
     width: 100vw;
 }
 
 .planeta {
-    border-width: 0.2rem;
-    border-radius: 1rem;
+    border-width: 0rem;
+    border-radius: 50%;
     border-style: solid;
     border-color: white;
-    width: 10rem;
-    height: 10rem;
+}
+
+a.link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
 }
 
 #mer {
-    margin-left: 14.6rem;
+    width: 6rem;
+    height: 6rem;
+    margin-left: 18rem;
+    margin-top: 42rem;
 }
 
 #ven {
-    margin-left: 4.4rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    margin-left: 8.5rem;
+    margin-top: 40.9rem;
+}
+
+#ter {
+    width: 8rem;
+    height: 8rem;
+    margin-left: 3.1rem;
+    margin-top: 40rem;
 }
 
 #mar {
-    margin-left: -4.5rem;
-}
-
-.baixo {
-    margin-top: 29rem;
-    width: 15rem;
-    height: 15rem;
+    width: 7.6rem;
+    height: 7.6rem;
+    margin-left: -1.8rem;
+    margin-top: 40.7rem;
 }
 
 #jup {
-    margin-left: 6.4rem;
+    width: 9rem;
+    height: 9rem;
+    margin-left: 10.2rem;
+    margin-top: 73rem;
+}
+
+#sat {
+    width: 9rem;
+    height: 9rem;
+    margin-left: 6.5rem;
+    margin-top: 71rem;
+}
+
+#ura {
+    width: 8.7rem;
+    height: 8.7rem;
+    margin-left: 6.5rem;
+    margin-top: 68.8rem;
+}
+
+#net {
+    width: 9rem;
+    height: 9rem;
+    margin-left: 2.6rem;
+    margin-top: 70rem;
 }

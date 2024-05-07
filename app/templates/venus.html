@@ -8,13 +8,22 @@
     <style>
         body {
             background-image: url("{{ url_for('static', filename='img/VENUS.jpg') }}");
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 100vw;
         }
     </style>
     <link rel="stylesheet" href="{{ url_for('static',  filename='css/planetas.css') }}">
 </head>
 <body>
+    <div class="btn">
+        <a href="{{ url_for('index') }}">
+            <img src="{{ url_for('static', filename='img/VOLTAR.png') }}" alt="">
+        </a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                window.location.replace("{{url_for('index')}}")
+            }, 300000);
+        });
+    </script>
 </body>
 </html>
