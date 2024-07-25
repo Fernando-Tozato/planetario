@@ -25,9 +25,9 @@ ser = None
 '''
 
 @app.route('/')
-def index():
+def home():
     print('0')
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/mercurio')
 def mercurio():

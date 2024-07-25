@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
     <style>
         body {
-            background-image: url("{{ url_for('static', filename='img/TERRA.jpg') }}");
+            background-image: url("{{ url_for('static', filename='img/TERRA.png') }}");
         }
     </style>
     <link rel="stylesheet" href="{{ url_for('static',  filename='css/planetas.css') }}">
 </head>
 <body>
     <div class="btn">
-        <a href="{{ url_for('index') }}">
+        <a href="{{ url_for('home') }}">
             <img src="{{ url_for('static', filename='img/VOLTAR.png') }}" alt="">
         </a>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
-                window.location.replace("{{url_for('index')}}")
+                window.location.replace("{{url_for('home')}}")
             }, 300000);
         });
     </script>
